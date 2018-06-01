@@ -9,7 +9,7 @@
         Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
     <Grid>
 
-        <dxdash:DashboardControl x:Name="dashboardControl1" MinHeight="150"/>
+        <dxdash:DashboardControl x:Name="dashboardControl1" MinHeight="150" ConfigureDataConnection="dashboardControl1_ConfigureDataConnection"/>
 
     </Grid>
 </Window>

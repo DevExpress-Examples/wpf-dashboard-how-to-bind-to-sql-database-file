@@ -1,4 +1,5 @@
 ﻿using DevExpress.DashboardCommon;
+using DevExpress.DataAccess.ConnectionParameters;
 using DevExpress.DataAccess.Sql;
 using System.Windows;
 
@@ -16,20 +17,17 @@ namespace WpfDashboard_SqlDataSource
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
             Dashboard dashboard = CreateDashboard();
             dashboardControl1.Dashboard = dashboard;
         }
         private IDashboardDataSource CreateSqlDataSource()
         {
-            DashboardSqlDataSource sqlDataSource =
-                new DashboardSqlDataSource("MySqlDataSource", "WpfDashboard_SqlDataSource.Properties.Settings.nwindConnectionString");
+            DashboardSqlDataSource sqlDataSource = new DashboardSqlDataSource("MySqlDataSource");
             SelectQuery selectQuery = SelectQueryFluentBuilder
                 .AddTable("SalesPerson")
                 .SelectColumns("CategoryName", "SalesPerson", "OrderDate", "ExtendedPrice")
                 .Build("MyQuery");
             sqlDataSource.Queries.Add(selectQuery);
-            sqlDataSource.Fill();
             return sqlDataSource;
         }
         private Dashboard CreateDashboard()
@@ -58,6 +56,13 @@ namespace WpfDashboard_SqlDataSource
             return dashBoard;
         }
 
+        private void dashboardControl1_ConfigureDataConnection(object sender, DashboardConfigureDataConnectionEventArgs e)
+        {
+            CustomStringConnectionParameters parameters = e.ConnectionParameters as CustomStringConnectionParameters;
+            if (e.DataSourceName == "MySqlDataSource")
+                parameters.ConnectionString = 
+                    @"XpoProvider=MSSqlServer;Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\NWind.mdf;Integrated Security=True";
 
+        }
     }
 }
