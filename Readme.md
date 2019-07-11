@@ -1,3 +1,5 @@
+# How to: Bind a Dashboard to a Microsoft SQL Server Database File in a WPF project
+
 This example demonstrates how to bind a dashboard to a Microsoft SQL Server database file (*.mdf).
 
 The dashboard and its data source are created at runtime. A dashboard data source is a new instance of the [DashboardSqlDataSource](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardSqlDataSource) object containing the [SelectQuery](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Sql.SelectQuery) to retrieve data. The data source is added to the [Dashboard.DataSources](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.Dashboard.DataSources) collection. However, the data source connection parameters are not specified at this time. 
