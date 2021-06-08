@@ -1,4 +1,10 @@
-# How to: Bind a Dashboard to a Microsoft SQL Server Database File in a WPF project
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml.cs](./CS/WpfDashboard_SqlDataSource/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfDashboard_SqlDataSource/MainWindow.xaml.vb))
+<!-- default file list end -->
+
+# WPF Dashboard Viewer - How to bind a dashboard to a Microsoft SQL Server database file
 
 This example demonstrates how to bind a dashboard to a Microsoft SQL Server database file (*.mdf).
 
@@ -11,3 +17,12 @@ Prior to data loading, the dashboard control fires the [DashboardControl.Configu
 Subsequently the data source is filled with data automatically, and the dashboard displays the data.
 
 ![](https://github.com/DevExpress-Examples/wpf-dashboard-how-to-bind-to-sql-database-file/blob/18.1.3%2B/images/WpfDashboard_SqlDataSource.png)
+
+## Documentation
+
+- [WPF Dashboard Viewer - Provide Data](https://docs.devexpress.com/Dashboard/119901/wpf-viewer/providing-data)
+
+    Describes how to bind a dashboard displayed within the [DashboardControl](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWpf.DashboardControl) to data.
+- [Visual Studio Designer - Provide Data](https://docs.devexpress.com/Dashboard/18295/wpf-viewer/create-dashboards-in-the-visual-studio-designer/provide-data)
+
+    Describes how to bind a dashboard to data in [Visual Studio Designer](https://docs.devexpress.com/Dashboard/17519/wpf-viewer/create-dashboards-in-the-visual-studio-designer).
