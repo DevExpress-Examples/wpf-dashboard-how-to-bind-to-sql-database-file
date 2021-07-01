@@ -4,7 +4,7 @@
 * [MainWindow.xaml.cs](./CS/WpfDashboard_SqlDataSource/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfDashboard_SqlDataSource/MainWindow.xaml.vb))
 <!-- default file list end -->
 
-# WPF Dashboard Viewer - How to bind a dashboard to a Microsoft SQL Server database file
+# Dashboard for WPF - How to bind a dashboard to a Microsoft SQL Server database file
 
 This example demonstrates how to bind a dashboard to a Microsoft SQL Server database file (*.mdf).
 
