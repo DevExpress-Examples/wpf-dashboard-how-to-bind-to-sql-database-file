@@ -21,7 +21,7 @@ Prior to data loading, the dashboard control fires the [DashboardControl.Configu
 
 Subsequently the data source is filled with data automatically, and the dashboard displays the data.
 
-![](https://github.com/DevExpress-Examples/wpf-dashboard-how-to-bind-to-sql-database-file/blob/18.1.3%2B/images/WpfDashboard_SqlDataSource.png)
+![](./images/WpfDashboard_SqlDataSource.png)
 
 ## Documentation
 
